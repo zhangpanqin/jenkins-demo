@@ -1,2 +1,3 @@
 @Library('jenkins-shared-lib') _
-serviceDeployPipeline([serviceName:"jenkins-demo"])
+import com.mflyyou.PipelineParam
+serviceDeployPipeline(new PipelineParam("jenkins-demo","main"))
